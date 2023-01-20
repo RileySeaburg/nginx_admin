@@ -1,0 +1,35 @@
+<div class="md:flex md:items-center md:justify-between flex-col gap-5">
+    <div class="min-w-0 flex-1">
+        <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight dark:text-white">NGINX Web
+            Server</h2>
+    </div>
+    <div class="mt-4 flex md:mt-0 md:ml-4">
+        <button id="reload-nginx" type="button"
+            class="inline-flex items-center rounded-md border border-yellow-300 bg-yellow-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-yellow-900 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">Reload</button>
+        <button id="stop-nginx" type="button"
+            class="ml-3 inline-flex items-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">Stop</button>
+<button id="start-nginx" type="button"
+    class="ml-3 inline-flex items-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Start</button>
+
+        {% if message  %}
+        {{message}}
+        {% endif %}
+
+    </div>
+
+    <form class="space-y-8 divide-y divide-gray-200" id="vhost" method='post'>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="col-span-3 sm:col-span-2">
+                <label for="vhost-domain" class="block text-sm font-medium text-gray-700 dark:text-white">Website</label>
+                <div class="mt-1 flex rounded-md shadow-sm">
+                    <span
+                        class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500">http://</span>
+                    <input type="text" name="vhost-domain" id="vhost-domain"
+                        class="block w-full flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        placeholder="www.example.com">
+                </div>
+            </div>
+        </div>
+        <button id="vhost-button" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+    </form>
+</div>

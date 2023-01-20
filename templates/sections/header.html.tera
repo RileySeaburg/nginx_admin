@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="styles.css" />
+<title>{% block title %}{% endblock title %}{% if page_title %}
+ {{page_title}}
+{% else %}
+ Dashboard
+{% endif %}</title>
