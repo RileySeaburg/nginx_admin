@@ -1,0 +1,706 @@
+yarn run v1.22.19
+$ node_modules/.bin/webpack
+asset main.js 2.49 MiB [emitted] (name: main)
+runtime modules 1.25 KiB 6 modules
+modules by path ./node_modules/ 2.26 MiB
+  javascript modules 2.24 MiB 260 modules
+  json modules 12.4 KiB
+    ./node_modules/tailwindcss/package.json 2.62 KiB [built] [code generated]
+    ./node_modules/resolve/lib/core.json 4.87 KiB [built] [code generated]
+    ./node_modules/is-core-module/core.json 4.95 KiB [built] [code generated]
+./client/index.js 2.33 KiB [built] [code generated]
+./terminal-highlight (ignored) 15 bytes [built] [code generated]
+source-map-js (ignored) 15 bytes [built] [code generated]
+path (ignored) 15 bytes [built] [code generated]
+url (ignored) 15 bytes [built] [code generated]
+fs (ignored) 15 bytes [built] [code generated]
+
+WARNING in ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 67:52-75
+Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+1 warning has detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+ERROR in ./node_modules/@nodelib/fs.scandir/out/adapters/fs.js 4:11-24
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/@nodelib/fs.scandir/out/adapters'
+Did you mean './fs'?
+Requests that should resolve in the current directory need to start with './'.
+Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+ @ ./node_modules/@nodelib/fs.scandir/out/settings.js 5:11-35
+ @ ./node_modules/@nodelib/fs.scandir/out/index.js 6:19-40
+ @ ./node_modules/@nodelib/fs.walk/out/settings.js 4:18-48
+ @ ./node_modules/@nodelib/fs.walk/out/index.js 7:19-40
+ @ ./node_modules/fast-glob/out/readers/async.js 3:15-42
+ @ ./node_modules/fast-glob/out/providers/async.js 3:16-43
+ @ ./node_modules/fast-glob/out/index.js 4:16-44
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/@nodelib/fs.scandir/out/settings.js 3:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/@nodelib/fs.scandir/out'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/@nodelib/fs.scandir/out/index.js 6:19-40
+ @ ./node_modules/@nodelib/fs.walk/out/settings.js 4:18-48
+ @ ./node_modules/@nodelib/fs.walk/out/index.js 7:19-40
+ @ ./node_modules/fast-glob/out/readers/async.js 3:15-42
+ @ ./node_modules/fast-glob/out/providers/async.js 3:16-43
+ @ ./node_modules/fast-glob/out/index.js 4:16-44
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/@nodelib/fs.stat/out/adapters/fs.js 4:11-24
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/@nodelib/fs.stat/out/adapters'
+Did you mean './fs'?
+Requests that should resolve in the current directory need to start with './'.
+Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+ @ ./node_modules/@nodelib/fs.stat/out/settings.js 3:11-35
+ @ ./node_modules/@nodelib/fs.stat/out/index.js 6:19-40
+ @ ./node_modules/fast-glob/out/readers/stream.js 4:15-42
+ @ ./node_modules/fast-glob/out/providers/stream.js 4:17-45
+ @ ./node_modules/fast-glob/out/index.js 5:17-46
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/@nodelib/fs.walk/out/providers/stream.js 3:17-34
+Module not found: Error: Can't resolve 'stream' in '/home/evolvingadmin/nginx_admin/node_modules/@nodelib/fs.walk/out/providers'
+Did you mean './stream'?
+Requests that should resolve in the current directory need to start with './'.
+Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "stream": require.resolve("stream-browserify") }'
+	- install 'stream-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "stream": false }
+ @ ./node_modules/@nodelib/fs.walk/out/index.js 5:17-46
+ @ ./node_modules/fast-glob/out/readers/async.js 3:15-42
+ @ ./node_modules/fast-glob/out/providers/async.js 3:16-43
+ @ ./node_modules/fast-glob/out/index.js 4:16-44
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/@nodelib/fs.walk/out/settings.js 3:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/@nodelib/fs.walk/out'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/@nodelib/fs.walk/out/index.js 7:19-40
+ @ ./node_modules/fast-glob/out/readers/async.js 3:15-42
+ @ ./node_modules/fast-glob/out/providers/async.js 3:16-43
+ @ ./node_modules/fast-glob/out/index.js 4:16-44
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/providers/provider.js 3:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out/providers'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/fast-glob/out/providers/async.js 4:19-40
+ @ ./node_modules/fast-glob/out/index.js 4:16-44
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/providers/stream.js 3:17-34
+Module not found: Error: Can't resolve 'stream' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out/providers'
+Did you mean './stream'?
+Requests that should resolve in the current directory need to start with './'.
+Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "stream": require.resolve("stream-browserify") }'
+	- install 'stream-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "stream": false }
+ @ ./node_modules/fast-glob/out/index.js 5:17-46
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/readers/reader.js 3:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out/readers'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/fast-glob/out/readers/async.js 4:17-36
+ @ ./node_modules/fast-glob/out/providers/async.js 3:16-43
+ @ ./node_modules/fast-glob/out/index.js 4:16-44
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/readers/stream.js 3:17-34
+Module not found: Error: Can't resolve 'stream' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out/readers'
+Did you mean './stream'?
+Requests that should resolve in the current directory need to start with './'.
+Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "stream": require.resolve("stream-browserify") }'
+	- install 'stream-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "stream": false }
+ @ ./node_modules/fast-glob/out/providers/stream.js 4:17-45
+ @ ./node_modules/fast-glob/out/index.js 5:17-46
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/settings.js 4:11-24
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out'
+ @ ./node_modules/fast-glob/out/index.js 7:19-40
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/settings.js 5:11-24
+Module not found: Error: Can't resolve 'os' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "os": require.resolve("os-browserify/browser") }'
+	- install 'os-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "os": false }
+ @ ./node_modules/fast-glob/out/index.js 7:19-40
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/utils/path.js 4:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out/utils'
+Did you mean './path'?
+Requests that should resolve in the current directory need to start with './'.
+Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/fast-glob/out/utils/index.js 10:13-30
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fast-glob/out/utils/pattern.js 4:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/fast-glob/out/utils'
+Did you mean './path'?
+Requests that should resolve in the current directory need to start with './'.
+Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/fill-range/index.js 10:13-28
+Module not found: Error: Can't resolve 'util' in '/home/evolvingadmin/nginx_admin/node_modules/fill-range'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "util": require.resolve("util/") }'
+	- install 'util'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "util": false }
+ @ ./node_modules/braces/lib/compile.js 3:13-34
+ @ ./node_modules/braces/index.js 4:16-40
+ @ ./node_modules/micromatch/index.js 4:15-32
+ @ ./node_modules/fast-glob/out/utils/pattern.js 6:19-40
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/glob-parent/index.js 4:23-52
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/glob-parent'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/fast-glob/out/utils/pattern.js 5:19-41
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/glob-parent/index.js 5:14-36
+Module not found: Error: Can't resolve 'os' in '/home/evolvingadmin/nginx_admin/node_modules/glob-parent'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "os": require.resolve("os-browserify/browser") }'
+	- install 'os-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "os": false }
+ @ ./node_modules/fast-glob/out/utils/pattern.js 5:19-41
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/merge2/index.js 9:15-32
+Module not found: Error: Can't resolve 'stream' in '/home/evolvingadmin/nginx_admin/node_modules/merge2'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "stream": require.resolve("stream-browserify") }'
+	- install 'stream-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "stream": false }
+ @ ./node_modules/fast-glob/out/utils/stream.js 4:15-32
+ @ ./node_modules/fast-glob/out/utils/index.js 14:15-34
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/micromatch/index.js 3:13-28
+Module not found: Error: Can't resolve 'util' in '/home/evolvingadmin/nginx_admin/node_modules/micromatch'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "util": require.resolve("util/") }'
+	- install 'util'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "util": false }
+ @ ./node_modules/fast-glob/out/utils/pattern.js 6:19-40
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/picomatch/lib/constants.js 3:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/picomatch/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/picomatch/lib/utils.js 10:4-26
+ @ ./node_modules/micromatch/index.js 6:14-44
+ @ ./node_modules/fast-glob/out/utils/pattern.js 6:19-40
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/picomatch/lib/picomatch.js 3:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/picomatch/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/picomatch/index.js 3:0-43
+ @ ./node_modules/micromatch/index.js 5:18-38
+ @ ./node_modules/fast-glob/out/utils/pattern.js 6:19-40
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/picomatch/lib/utils.js 3:13-28
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/picomatch/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/micromatch/index.js 6:14-44
+ @ ./node_modules/fast-glob/out/utils/pattern.js 6:19-40
+ @ ./node_modules/fast-glob/out/utils/index.js 12:16-36
+ @ ./node_modules/fast-glob/out/index.js 8:14-32
+ @ ./node_modules/tailwindcss/lib/lib/content.js 19:55-75
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/resolve/lib/async.js 1:9-22
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/resolve/lib'
+ @ ./node_modules/resolve/index.js 1:12-34
+ @ ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 11:54-72
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/resolve/lib/async.js 3:11-26
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/resolve/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/resolve/index.js 1:12-34
+ @ ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 11:54-72
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/resolve/lib/homedir.js 3:9-22
+Module not found: Error: Can't resolve 'os' in '/home/evolvingadmin/nginx_admin/node_modules/resolve/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "os": require.resolve("os-browserify/browser") }'
+	- install 'os-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "os": false }
+ @ ./node_modules/resolve/lib/async.js 2:17-37
+ @ ./node_modules/resolve/index.js 1:12-34
+ @ ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 11:54-72
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/resolve/lib/node-modules-paths.js 1:11-26
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/resolve/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/resolve/lib/async.js 5:23-54
+ @ ./node_modules/resolve/index.js 1:12-34
+ @ ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 11:54-72
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/resolve/lib/sync.js 2:9-22
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/resolve/lib'
+ @ ./node_modules/resolve/index.js 4:13-34
+ @ ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 11:54-72
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/resolve/lib/sync.js 3:11-26
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/resolve/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/resolve/index.js 4:13-34
+ @ ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 11:54-72
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/corePlugins.js 15:49-62
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib'
+ @ ./node_modules/tailwindcss/lib/lib/setupContextUtils.js 30:21-46
+ @ ./node_modules/tailwindcss/lib/processTailwindFeatures.js 19:27-61
+ @ ./node_modules/tailwindcss/lib/index.js 6:70-106
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/corePlugins.js 16:52-67
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/tailwindcss/lib/lib/setupContextUtils.js 30:21-46
+ @ ./node_modules/tailwindcss/lib/processTailwindFeatures.js 19:27-61
+ @ ./node_modules/tailwindcss/lib/index.js 6:70-106
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/cacheInvalidation.js 9:53-70
+Module not found: Error: Can't resolve 'crypto' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "crypto": require.resolve("crypto-browserify") }'
+	- install 'crypto-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "crypto": false }
+ @ ./node_modules/tailwindcss/lib/lib/setupContextUtils.js 37:29-62
+ @ ./node_modules/tailwindcss/lib/processTailwindFeatures.js 19:27-61
+ @ ./node_modules/tailwindcss/lib/index.js 6:70-106
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/content.js 16:49-62
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/content.js 17:51-66
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/findAtConfigPath.js 9:49-62
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+ @ ./node_modules/tailwindcss/lib/index.js 8:26-59
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/findAtConfigPath.js 10:51-66
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/tailwindcss/lib/index.js 8:26-59
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 9:49-62
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/getModuleDependencies.js 10:51-66
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 16:68-107
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/setupContextUtils.js 18:49-62
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+ @ ./node_modules/tailwindcss/lib/processTailwindFeatures.js 19:27-61
+ @ ./node_modules/tailwindcss/lib/index.js 6:70-106
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/setupContextUtils.js 19:50-64
+Module not found: Error: Can't resolve 'url' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "url": require.resolve("url/") }'
+	- install 'url'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "url": false }
+ @ ./node_modules/tailwindcss/lib/processTailwindFeatures.js 19:27-61
+ @ ./node_modules/tailwindcss/lib/index.js 6:70-106
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 13:49-62
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/lib'
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/util/resolveConfigPath.js 9:49-62
+Module not found: Error: Can't resolve 'fs' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/util'
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 18:64-100
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/lib/util/resolveConfigPath.js 10:51-66
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/lib/util'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 18:64-100
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/node_modules/glob-parent/index.js 4:23-52
+Module not found: Error: Can't resolve 'path' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/node_modules/glob-parent'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "path": require.resolve("path-browserify") }'
+	- install 'path-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "path": false }
+ @ ./node_modules/tailwindcss/lib/util/parseGlob.js 9:57-79
+ @ ./node_modules/tailwindcss/lib/lib/content.js 21:19-47
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+ERROR in ./node_modules/tailwindcss/node_modules/glob-parent/index.js 5:14-36
+Module not found: Error: Can't resolve 'os' in '/home/evolvingadmin/nginx_admin/node_modules/tailwindcss/node_modules/glob-parent'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+	- add a fallback 'resolve.fallback: { "os": require.resolve("os-browserify/browser") }'
+	- install 'os-browserify'
+If you don't want to include a polyfill, you can use an empty module like this:
+	resolve.fallback: { "os": false }
+ @ ./node_modules/tailwindcss/lib/util/parseGlob.js 9:57-79
+ @ ./node_modules/tailwindcss/lib/lib/content.js 21:19-47
+ @ ./node_modules/tailwindcss/lib/lib/setupTrackingContext.js 22:19-42
+ @ ./node_modules/tailwindcss/lib/index.js 5:67-104
+ @ ./client/index.js 1:15-37
+
+43 errors have detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+webpack 5.75.0 compiled with 43 errors and 1 warning in 1382 ms
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

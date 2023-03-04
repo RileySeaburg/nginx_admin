@@ -34,7 +34,7 @@
   <body class="h-full">
   ```
 -->
-<div class=" dark:text-white"  >
+<div class=" dark:text-white">
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
     <div class="relative z-40 md:hidden" role="dialog" aria-modal="true">
         <!--
@@ -356,7 +356,7 @@
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
                     <!-- Replace with your content -->
                     {% include 'components/dashboard_heading'%}
-                    
+                    {% include 'components/editor'%}
                     <!-- /End replace -->
                 </div>
             </div>

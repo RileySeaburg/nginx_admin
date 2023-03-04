@@ -39,13 +39,16 @@ pub fn stop_nginx() -> Result<Output, std::io::Error> {
         .output()
 }
 
-pub fn start_nginx() -> Result<Output, std::io::Error> {
+pub extern fn start_nginx() -> Result<Output, std::io::Error> {
     Command::new("sudo")
         .arg("systemctl")
         .arg("start")
         .arg("nginx")
         .output()
 }
+
+
+
 impl VhostHandler {
     /// # Name: reload_nginx
     /// # Description: A controller to reload nginx
@@ -315,4 +318,29 @@ impl VhostHandler {
             status: None,
         })
     }
+
+    /// # Name: 
+    ///     get_vhost
+    /// ## Description: 
+    ///     Get the contents of a vhost file in /etc/nginx/evolving_hosts/vhosts/{domain}.conf
+    /// ## Arguments
+    ///     domain: String
+    /// ## Returns:
+    ///     Result<VhostResponse, std::io::Error>`
+    /// ## Errors: 
+    ///     std::io::Error
+    /// ### - Example: 
+    ///      get_vhost("example.com")
+    /// ### - Example: 
+    ///      get_vhost("example.com").unwrap().message
+    pub fn get_vhost(domain: String) -> Result<VhostResponse, std::io::Error> {
+        let contents = fs::read_to_string(format!("/etc/nginx/evolving_hosts/vhosts/{}.conf", domain))?;
+        Ok(VhostResponse {
+            message: contents,
+            error: None,
+            status: None,
+        })
+    }
+
+    
 }

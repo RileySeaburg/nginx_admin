@@ -52,8 +52,11 @@ pub fn stop_nginx_route() -> Json<NginxResponse> {
 }
 
 // start nginx - sends a JSON response to the dashboard from the controller
+
+
 #[get("/start_nginx")]
-pub fn start_nginx_route() -> Json<NginxResponse> {
+#[no_mangle]
+pub extern fn start_nginx_route() -> Json<NginxResponse> {
     // parse the output into three variables
     let output = start_nginx().unwrap_or_else(|e| {
         panic!("failed to execute process: {}", e);

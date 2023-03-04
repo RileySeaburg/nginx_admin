@@ -1,16 +1,21 @@
 const path = require('path');
 
 module.exports = {
-    entry: './static/js/index.js',
+    mode: 'development',
+    entry: './client/index.js',
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'static/dist')
+        filename: 'index.js',
+        path: path.resolve(__dirname, 'static/js')
     },
     module: {
+        
         rules: [
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: ['babel-loader'],
             },
         ],
     },
