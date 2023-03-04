@@ -16,6 +16,7 @@ reqwest = "0.11"
 rocket_dyn_templates = {version = "0.1.0-rc.2", features = ["tera"]}
 tarpc = "0.31.0"
 ssr_rs = "0.2.3"
+rustyroad = "0.1.2"
 
 
 [dependencies.sqlx]
